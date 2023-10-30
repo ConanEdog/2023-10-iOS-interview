@@ -19,8 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         appearance.backgroundColor = UIColor(named: "background")
         appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
         appearance.shadowColor = nil
+        
+        appearance.setBackIndicatorImage(UIImage(named: "back"), transitionMaskImage: UIImage(named: "back"))
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        
         
         return true
     }

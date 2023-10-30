@@ -47,12 +47,14 @@ class MessageTableVC: UITableViewController {
         self.navigationItem.title = "Notification"
         
         self.view.backgroundColor = UIColor(named: "background")
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back"), style: .plain, target: self, action: #selector(goBack))
+        let backImage = UIImage(named: "back")
+        
+        //self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back"), style: .plain, target: self, action: #selector(goBack))
     }
     
-    @objc func goBack() {
-        self.navigationController?.popViewController(animated: true)
-    }
+//    @objc func goBack() {
+//        self.navigationController?.popViewController(animated: true)
+//    }
 
     /*
     // Override to support conditional editing of the table view.

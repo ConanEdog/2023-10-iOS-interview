@@ -91,6 +91,8 @@ class TabViewController: UIViewController {
         
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "avatar"), style: .plain, target: nil, action: nil)
         self.view.backgroundColor = UIColor(named: "background")
+        self.navigationItem.backButtonTitle = ""
+        
     }
     
     private func setupBtn() {
